@@ -1,0 +1,28 @@
+.headermenu {
+    display: flex;
+    flex-direction: row;
+    position: fixed 0;
+    width: 100vw;
+    background-color: blanchedalmond;
+    padding: 5px;
+    height: 75px;
+    align-items: center;
+}
+
+.maindiv {
+    width: 100vw; 
+    background-color: cornsilk; 
+    display: flex; flex-direction: row; 
+    justify-content: space-evenly;
+    padding: 10px;
+
+    h3, p {
+        margin: 0;
+    }
+}
+
+.icon {
+    height: 20px; 
+    width: 20px; 
+    margin-left: 4px;
+}
