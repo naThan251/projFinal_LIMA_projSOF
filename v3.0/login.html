@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - MORANA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a href="index.html" class="logo">MORANA</a>
+
+      <nav class="menu-nav">
+        <a href="index.html">Início (Landing Page)</a>
+        <a href="login.html" class="ativo">Login</a>
+        <a href="detalhe.html">Detalhes do produto</a>
+        <a href="sucesso.html">Sucesso</a>
+      </nav>
+
+      <div class="acoes-cabecalho">
+        <a href="catalogo.html" class="acao-icone" title="Buscar">⌕</a>
+        <a href="login.html" class="acao-icone" title="Minha Conta">♙</a>
+        <a href="carrinho.html" class="acao-icone" title="Carrinho">
+          🛍
+          <span class="badge-carrinho">2</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pagina-centralizada">
+    <div class="card-login">
+      <div class="login-lateral">
+        <img src="media/caixa_presente.jpg" alt="Joias luxo">
+        <div>
+          <h3 class="fonte-serif" style="font-size: 1.5rem; letter-spacing: 0.1em;">MORANA</h3>
+        </div>
+        <div>
+          <p class="fonte-serif" style="font-style: italic; font-size: 1.125rem; color: #fde68a;">"A beleza está nos detalhes mais sutis."</p>
+        </div>
+      </div>
+
+      <div class="login-formulario">
+        <h2 class="titulo-secao" style="margin-bottom: 0.5rem;">Entrar na sua conta</h2>
+        <p class="texto-suave" style="font-size: 0.75rem; margin-bottom: 2rem;">Acesse seus pedidos, favoritos e muito mais.</p>
+
+        <form action="index.html">
+          <div class="campo-grupo">
+            <label class="campo-label">E-mail</label>
+            <input type="email" value="os.q@gmail.com" required class="campo-input">
+          </div>
+
+          <div class="campo-grupo">
+            <label class="campo-label">Senha</label>
+            <input type="password" value="12345678" required class="campo-input">
+          </div>
+
+          <div style="text-align: right; margin-bottom: 1rem;">
+            <a href="#" class="texto-suave" style="font-size: 0.75rem;">Esqueceu sua senha?</a>
+          </div>
+
+          <button type="submit" class="btn btn-escuro btn-largura-total">Entrar</button>
+        </form>
+
+        <div class="texto-centro texto-suave" style="font-size: 0.75rem; margin-top: 2rem;">
+          Não tem uma conta? <a href="#" style="color: var(--dark); font-weight: 700; text-decoration: underline;">Cadastre-se</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-grade">
+      <div>
+        <h4>MORANA</h4>
+        <p>Joias e acessórios de alta qualidade para destacar a beleza em todos os momentos.</p>
+      </div>
+      <div>
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="index.html#home">Início</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="index.html#assinatura">Planos de Assinatura</a></li>
+          <li><a href="index.html#sobre">Sobre Nós</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Atendimento</h5>
+        <ul>
+          <li><a href="index.html#contato">Fale Conosco</a></li>
+          <li><a href="#">Política de Troca</a></li>
+          <li><a href="#">Termos de Serviço</a></li>
+          <li><a href="#">Garantia das Peças</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Newsletter</h5>
+        <p>Receba novidades e ofertas exclusivas no seu e-mail.</p>
+        <div class="newsletter">
+          <input type="email" placeholder="Seu e-mail">
+          <button>&gt;</button>
+        </div>
+      </div>
+    </div>
+    <div class="container rodape-base">
+      &copy; 2026 MORANA Joias. Todos os direitos reservados.
+    </div>
+  </footer>
+
+</body>
+</html>

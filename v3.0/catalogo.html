@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso Catálogo - MORANA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a href="index.html" class="logo">MORANA</a>
+
+      <nav class="menu-nav">
+        <a href="index.html">Início (Landing Page)</a>
+        <a href="login.html">Login</a>
+        <a href="detalhe.html">Detalhes do produto</a>
+        <a href="sucesso.html">Sucesso</a>
+      </nav>
+
+      <div class="acoes-cabecalho">
+        <a href="catalogo.html" class="acao-icone" title="Buscar">⌕</a>
+        <a href="login.html" class="acao-icone" title="Minha Conta">♙</a>
+        <a href="carrinho.html" class="acao-icone" title="Carrinho">
+          🛍
+          <span class="badge-carrinho">2</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding: 2.5rem 0;">
+    <div class="container">
+      <div style="margin-bottom: 2rem;">
+        <h2 class="titulo-secao">Nosso Catálogo</h2>
+        <p class="texto-suave" style="font-size: 0.75rem;">Descubra peças únicas, feitas para todos os estilos.</p>
+      </div>
+
+      <div class="catalogo-layout">
+        <aside class="filtros-lateral">
+          <div class="filtros-bloco">
+            <h3 class="filtros-titulo">Categorias</h3>
+            <ul class="lista-categorias">
+              <li><a href="#" class="ativa">✓ Todos</a></li>
+              <li><a href="#">Anéis</a></li>
+              <li><a href="#">Brincos</a></li>
+              <li><a href="#">Colares</a></li>
+              <li><a href="#">Pulseiras</a></li>
+              <li><a href="#">Conjuntos</a></li>
+            </ul>
+          </div>
+
+          <div class="filtros-bloco">
+            <h3 class="filtros-titulo">Material</h3>
+            <div class="lista-materiais">
+              <label><input type="checkbox" checked> Ouro 18k</label>
+              <label><input type="checkbox"> Prata 925</label>
+              <label><input type="checkbox"> Diamantes Certificados</label>
+            </div>
+          </div>
+        </aside>
+
+        <div>
+          <div class="barra-busca">
+            <input type="text" placeholder="Buscar joias, anéis, colares..." class="campo-input">
+            <button class="btn btn-escuro">Buscar</button>
+          </div>
+
+          <div class="grade-3">
+            <a href="detalhe.html" class="card-produto card-produto-branco">
+              <div class="card-foto"><img src="media/anel_solitario.jpg" alt="Anel solitário"></div>
+              <h4>Anel solitário</h4>
+              <p>R$ 2.499,00</p>
+            </a>
+
+            <a href="detalhe.html" class="card-produto card-produto-branco">
+              <div class="card-foto"><img src="media/brinco_argola.jpg" alt="Brinco argola"></div>
+              <h4>Brinco argola</h4>
+              <p>R$ 890,00</p>
+            </a>
+
+            <a href="detalhe.html" class="card-produto card-produto-branco">
+              <div class="card-foto"><img src="media/colar_serene.jpg" alt="Colar Serena"></div>
+              <h4>Colar Serena</h4>
+              <p>R$ 1.890,00</p>
+            </a>
+
+            <a href="detalhe.html" class="card-produto card-produto-branco">
+              <div class="card-foto"><img src="media/anel_entrelacado.jpg" alt="Anel Entrelaçado Ouro"></div>
+              <h4>Anel Entrelaçado Ouro</h4>
+              <p>R$ 1.450,00</p>
+            </a>
+
+            <a href="detalhe.html" class="card-produto card-produto-branco">
+              <div class="card-foto"><img src="media/pingente_gota.jpg" alt="Pingente Gota D'Água"></div>
+              <h4>Pingente Gota D'Água</h4>
+              <p>R$ 1.120,00</p>
+            </a>
+
+            <a href="detalhe.html" class="card-produto card-produto-branco">
+              <div class="card-foto"><img src="media/relogio_dourado.jpg" alt="Relógio Quartz Ouro"></div>
+              <h4>Relógio Quartz Ouro</h4>
+              <p>R$ 3.200,00</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-grade">
+      <div>
+        <h4>MORANA</h4>
+        <p>Joias e acessórios de alta qualidade para destacar a beleza em todos os momentos.</p>
+      </div>
+      <div>
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="index.html#home">Início</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="index.html#assinatura">Planos de Assinatura</a></li>
+          <li><a href="index.html#sobre">Sobre Nós</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Atendimento</h5>
+        <ul>
+          <li><a href="index.html#contato">Fale Conosco</a></li>
+          <li><a href="#">Política de Troca</a></li>
+          <li><a href="#">Termos de Serviço</a></li>
+          <li><a href="#">Garantia das Peças</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Newsletter</h5>
+        <p>Receba novidades e ofertas exclusivas no seu e-mail.</p>
+        <div class="newsletter">
+          <input type="email" placeholder="Seu e-mail">
+          <button>&gt;</button>
+        </div>
+      </div>
+    </div>
+    <div class="container rodape-base">
+      &copy; 2026 MORANA Joias. Todos os direitos reservados.
+    </div>
+  </footer>
+
+</body>
+</html>

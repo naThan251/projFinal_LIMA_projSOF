@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Carrinho - MORANA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a href="index.html" class="logo">MORANA</a>
+
+      <nav class="menu-nav">
+        <a href="index.html">Início (Landing Page)</a>
+        <a href="login.html">Login</a>
+        <a href="detalhe.html">Detalhes do produto</a>
+        <a href="sucesso.html">Sucesso</a>
+      </nav>
+
+      <div class="acoes-cabecalho">
+        <a href="catalogo.html" class="acao-icone" title="Buscar">⌕</a>
+        <a href="login.html" class="acao-icone" title="Minha Conta">♙</a>
+        <a href="carrinho.html" class="acao-icone" title="Carrinho">
+          🛍
+          <span class="badge-carrinho">2</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding: 3rem 0;">
+    <div class="container container-medio">
+      <div style="border-bottom: 1px solid var(--border); padding-bottom: 1rem; margin-bottom: 2rem;">
+        <h2 class="titulo-secao">Meu carrinho</h2>
+        <a href="catalogo.html" class="texto-suave" style="font-size: 0.75rem; display: inline-block; margin-top: 0.25rem;">← Continuar comprando</a>
+      </div>
+
+      <div class="carrinho-grade">
+        <div>
+          <div class="carrinho-item">
+            <div class="carrinho-produto">
+              <img src="media/anel_solitario.jpg" alt="Anel solitário">
+              <div>
+                <h4 class="fonte-serif" style="font-size: 0.875rem; font-weight: 600;">Anel Solitário</h4>
+                <p class="texto-suave" style="font-size: 0.75rem;">Ouro 18k / Tam 14</p>
+                <p style="font-size: 0.75rem; font-weight: 700; margin-top: 0.25rem;">R$ 2.499,00</p>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div class="controle-qtd">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+              </div>
+              <strong style="font-size: 0.75rem;">R$ 2.499,00</strong>
+            </div>
+          </div>
+
+          <div class="carrinho-item">
+            <div class="carrinho-produto">
+              <img src="media/colar_serene.jpg" alt="Colar Serena">
+              <div>
+                <h4 class="fonte-serif" style="font-size: 0.875rem; font-weight: 600;">Colar Serena</h4>
+                <p class="texto-suave" style="font-size: 0.75rem;">Ouro 18k e Diamante</p>
+                <p style="font-size: 0.75rem; font-weight: 700; margin-top: 0.25rem;">R$ 1.890,00</p>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div class="controle-qtd">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+              </div>
+              <strong style="font-size: 0.75rem;">R$ 1.890,00</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="resumo-pedido">
+          <h3 class="fonte-serif" style="font-size: 1.125rem; border-bottom: 1px solid var(--border); padding-bottom: 0.75rem;">Resumo do Pedido</h3>
+
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <div class="resumo-linha">
+              <span>Subtotal</span>
+              <span>R$ 4.389,00</span>
+            </div>
+            <div class="resumo-linha">
+              <span>Entrega / Frete</span>
+              <span class="texto-verde"><strong>Grátis</strong></span>
+            </div>
+          </div>
+
+          <div class="resumo-total">
+            <span>Total</span>
+            <span class="fonte-serif" style="font-size: 1rem;">R$ 4.389,00</span>
+          </div>
+
+          <a href="sucesso.html" class="btn btn-escuro btn-largura-total">Finalizar compra</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-grade">
+      <div>
+        <h4>MORANA</h4>
+        <p>Joias e acessórios de alta qualidade para destacar a beleza em todos os momentos.</p>
+      </div>
+      <div>
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="index.html#home">Início</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="index.html#assinatura">Planos de Assinatura</a></li>
+          <li><a href="index.html#sobre">Sobre Nós</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Atendimento</h5>
+        <ul>
+          <li><a href="index.html#contato">Fale Conosco</a></li>
+          <li><a href="#">Política de Troca</a></li>
+          <li><a href="#">Termos de Serviço</a></li>
+          <li><a href="#">Garantia das Peças</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Newsletter</h5>
+        <p>Receba novidades e ofertas exclusivas no seu e-mail.</p>
+        <div class="newsletter">
+          <input type="email" placeholder="Seu e-mail">
+          <button>&gt;</button>
+        </div>
+      </div>
+    </div>
+    <div class="container rodape-base">
+      &copy; 2026 MORANA Joias. Todos os direitos reservados.
+    </div>
+  </footer>
+
+</body>
+</html>

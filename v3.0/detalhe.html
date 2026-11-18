@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anel Solitário - MORANA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a href="index.html" class="logo">MORANA</a>
+
+      <nav class="menu-nav">
+        <a href="index.html">Início (Landing Page)</a>
+        <a href="login.html">Login</a>
+        <a href="detalhe.html" class="ativo">Detalhes do produto</a>
+        <a href="sucesso.html">Sucesso</a>
+      </nav>
+
+      <div class="acoes-cabecalho">
+        <a href="catalogo.html" class="acao-icone" title="Buscar">⌕</a>
+        <a href="login.html" class="acao-icone" title="Minha Conta">♙</a>
+        <a href="carrinho.html" class="acao-icone" title="Carrinho">
+          🛍
+          <span class="badge-carrinho">2</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding: 3rem 0;">
+    <div class="container">
+      <div class="migalhas">
+        <a href="index.html">Início</a>
+        <span>/</span>
+        <a href="catalogo.html">Catálogo</a>
+        <span>/</span>
+        <a href="catalogo.html">Anéis</a>
+        <span>/</span>
+        <strong>Anel Solitário</strong>
+      </div>
+
+      <div class="produto-detalhe">
+        <div>
+          <div class="card-foto" style="border: 1px solid var(--border); border-radius: 2px; margin-bottom: 0;">
+            <img src="media/anel_solitario.jpg" alt="Anel Solitário Ouro">
+          </div>
+
+          <div class="miniaturas">
+            <div class="miniatura ativa"><img src="media/anel_solitario.jpg" alt="Miniatura 1"></div>
+            <div class="miniatura"><img src="media/anel_solitario.jpg" alt="Miniatura 2"></div>
+            <div class="miniatura"><img src="media/anel_solitario.jpg" alt="Miniatura 3"></div>
+            <div class="miniatura"><img src="media/anel_solitario.jpg" alt="Miniatura 4"></div>
+          </div>
+        </div>
+
+        <div class="produto-info">
+          <div>
+            <h1 class="titulo-secao">Anel solitário</h1>
+            <p class="produto-preco">R$ 2.499,00</p>
+          </div>
+
+          <p class="texto-suave" style="font-size: 0.875rem; line-height: 1.6;">
+            Clássico e atemporal, o Anel solitário é a escolha perfeita para quem valoriza a elegância e a sofisticação em cada detalhe. Confeccionado em ouro 18k e com um diamante de alta qualidade, esta peça é símbolo de amor e exclusividade.
+          </p>
+
+          <div class="produto-vantagens">
+            <div>✓ Ouro 18k</div>
+            <div>✓ Diamante certificado</div>
+            <div>✓ Ajuste de tamanho gratuito</div>
+          </div>
+
+          <div>
+            <label class="campo-label" style="margin-bottom: 0.5rem;">Tamanho do Anel</label>
+            <div class="tamanhos-lista">
+              <button class="btn-tamanho selecionado">14</button>
+              <button class="btn-tamanho">16</button>
+              <button class="btn-tamanho">18</button>
+              <button class="btn-tamanho">20</button>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; padding-top: 0.5rem;">
+            <a href="carrinho.html" class="btn btn-escuro btn-largura-total">🛍 Adicionar ao carrinho</a>
+            <a href="carrinho.html" class="btn btn-contorno btn-largura-total">Adicionar aos favoritos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-grade">
+      <div>
+        <h4>MORANA</h4>
+        <p>Joias e acessórios de alta qualidade para destacar a beleza em todos os momentos.</p>
+      </div>
+      <div>
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="index.html#home">Início</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="index.html#assinatura">Planos de Assinatura</a></li>
+          <li><a href="index.html#sobre">Sobre Nós</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Atendimento</h5>
+        <ul>
+          <li><a href="index.html#contato">Fale Conosco</a></li>
+          <li><a href="#">Política de Troca</a></li>
+          <li><a href="#">Termos de Serviço</a></li>
+          <li><a href="#">Garantia das Peças</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Newsletter</h5>
+        <p>Receba novidades e ofertas exclusivas no seu e-mail.</p>
+        <div class="newsletter">
+          <input type="email" placeholder="Seu e-mail">
+          <button>&gt;</button>
+        </div>
+      </div>
+    </div>
+    <div class="container rodape-base">
+      &copy; 2026 MORANA Joias. Todos os direitos reservados.
+    </div>
+  </footer>
+
+</body>
+</html>
