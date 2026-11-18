@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>MORANA - Meu Carrinho</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background-color: #f6f1eb; 
+      color: #111;
+    }
+
+    header {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 60px;
+    }
+
+    .logo {
+      font-size: 32px;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #111;
+      font-weight: bold;
+      margin: 0 20px;
+      font-size: 18px;
+    }
+
+    .icones {
+      display: flex;
+      gap: 20px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .voltar {
+      display: inline-block;
+      text-decoration: none;
+      color: #111;
+      font-size: 15px;
+      margin-bottom: 40px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th {
+      text-align: center;
+      font-weight: normal;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #e0dad3;
+    }
+
+    th:first-child {
+      text-align: left;
+    }
+
+    td {
+      padding: 20px 0;
+      text-align: center;
+      border-bottom: 1px solid #e0dad3;
+      font-size: 17px;
+    }
+
+    .produto-info {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    .produto-info img {
+      width: 85px;
+      height: 85px;
+      object-fit: cover;
+      border-radius: 12px;
+      background-color: #ddd;
+    }
+
+    .qtd-box {
+      display: inline-flex;
+      background-color: #e6e6e8;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .qtd-box button {
+      border: none;
+      background: transparent;
+      padding: 8px 12px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .qtd-box button:hover {
+      background-color: #d5d5d8;
+    }
+
+    .qtd-box span {
+      padding: 8px 10px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+    }
+
+    .resumo {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: 30px;
+    }
+
+    .total-linha {
+      display: flex;
+      justify-content: space-between;
+      width: 280px;
+      font-size: 19px;
+      margin-bottom: 20px;
+    }
+
+    .btn-finalizar {
+      background-color: #0d0d0d;
+      color: #ffffff;
+      border: none;
+      border-radius: 16px;
+      padding: 16px 65px;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btn-finalizar:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">MORANA</div>
+    
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Catálogo</a>
+      <a href="#">Sobre</a>
+    </nav>
+
+    <div class="icones">
+      <span>.</span>
+      <span>..</span>
+      <span>...</span>
+    </div>
+  </header>
+
+  <main>
+    <h1>Meu carrinho</h1>
+    <a href="#" class="voltar">&lt; Continuar comprando</a>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Preço</th>
+          <th>Quantidade</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-preco="2499">
+          <td>
+            <div class="produto-info">
+              <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=200" alt="Anel Solitário">
+              <span>Anel Solitário</span>
+            </div>
+          </td>
+          <td>R$ 2499,00</td>
+          <td>
+            <div class="qtd-box">
+              <button onclick="mudarQtd(this, -1)">−</button>
+              <span class="qtd">1</span>
+              <button onclick="mudarQtd(this, 1)">+</button>
+            </div>
+          </td>
+          <td class="subtotal">R$ 2499,00</td>
+        </tr>
+
+        <tr data-preco="1899">
+          <td>
+        <div class="produto-info">
+              <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=200" alt="Colar serena">
+              <span>Colar serena</span>
+            </div>
+          </td>
+          <td>R$ 1899,00</td>
+          <td>
+            <div class="qtd-box">
+              <button onclick="mudarQtd(this, -1)">−</button>
+              <span class="qtd">1</span>
+              <button onclick="mudarQtd(this, 1)">+</button>
+            </div>
+          </td>
+          <td class="subtotal">R$ 1899,00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="resumo">
+      <div class="total-linha">
+        <strong>Total:</strong>
+        <span id="total-geral">R$ 4398,00</span>
+      </div>
+      <button class="btn-finalizar" onclick="alert('Compra finalizada!')">Finalizar compra</button>
+    </div>
+  </main>
+
+  <script>
+    function mudarQtd(botao, delta) {
+      const linha = botao.closest('tr');
+      const spanQtd = linha.querySelector('.qtd');
+      const preco = parseFloat(linha.dataset.preco);
+      
+      let qtd = parseInt(spanQtd.innerText) + delta;
+      if (qtd < 1) qtd = 1; 
+
+      spanQtd.innerText = qtd;
+      
+      const subtotal = preco * qtd;
+      linha.querySelector('.subtotal').innerText = formatarMoeda(subtotal);
+
+      atualizarTotal();
+    }
+
+    function atualizarTotal() {
+      let total = 0;
+      document.querySelectorAll('tbody tr').forEach(linha => {
+        const preco = parseFloat(linha.dataset.preco);
+        const qtd = parseInt(linha.querySelector('.qtd').innerText);
+        total += preco * qtd;
+      });
+      document.getElementById('total-geral').innerText = formatarMoeda(total);
+    }
+
+    function formatarMoeda(valor) {
+      return 'R$ ' + valor.toFixed(2).replace('.', ',');
+    }
+  </script>
+
+</body>
+</html>
